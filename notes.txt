@@ -1,0 +1,5 @@
+Git ist ein Versionskonztrollsystem, das von Linus Torvalds erfunden wurde, weil er mit den bestehenden Systemen unzufrieden war.
+
+Es dient in erster Linie dazu, Änderungen an Code, aber auch anderen Projekten, nachverfolgen zu können.
+Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen.
+Zudem können an unterschiedlichen Stellen verschiedene Menschen arbeitenFeatures/Teilen
