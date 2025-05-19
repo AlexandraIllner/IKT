@@ -1,0 +1,1 @@
+tatsächlich habe ich bislang nie einen fast forward merge gemacht, weil ich meist auf konflikte achten musste.

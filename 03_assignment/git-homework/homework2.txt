@@ -1,0 +1,262 @@
+ala@ala-ThinkPad-P50:~/00_projects/IKT$ mkdir git-homework
+ala@ala-ThinkPad-P50:~/00_projects/IKT$ cd git-homework/
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialised empty Git repository in /home/ala/00_projects/IKT/git-homework/.git/
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ nano notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git diff
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ nano notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git add notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git commit notes.txt
+[master (root-commit) 7197512] first version of notes
+ 1 file changed, 5 insertions(+)
+ create mode 100644 notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch master
+nothing to commit, working tree clean
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git diff
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ nano notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git diff
+diff --git a/notes.txt b/notes.txt
+index 4df7624..d8876e4 100644
+--- a/notes.txt
++++ b/notes.txt
+@@ -1,5 +1,7 @@
+-Git ist ein Versionskonztrollsystem, das von Linus Torvalds erfunden wurde, weil er mit den bestehenden Systemen unzufrieden war.
++Git ist ein Versionskontrollsystem, das von Linus Torvalds erfunden wurde, weil er mit den bestehenden Systemen unzufrieden war.
+
+ Es dient in erster Linie dazu, Änderungen an Code, aber auch anderen Projekten, nachverfolgen zu können.
+-Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen.
+-Zudem können an unterschiedlichen Stellen verschiedene Menschen arbeitenFeatures/Teilen
++Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen, falls etwas nicht funktioniert.
++Außerdem lässt sich gleichzeitig an verschiedenen Features arbeiten, die Beiträge einzelner Teammitglieder abbilden und der Werdegang eines Projekts verfolgen.
++
++Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um reibungslos in der Historie suchen zu können.
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git add notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git commit notes.txt
+[master 22043d5] fixed typos and added info to notes.txt
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git log
+commit 22043d5fcbc96449ce25be44967e125e2a5ad258 (HEAD -> master)
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 22:45:31 2025 +0200
+
+    fixed typos and added info to notes.txt
+
+commit 719751244d82f8ca25a48c85a8c60c60a3622678
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 22:39:38 2025 +0200
+
+    first version of notes
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch master
+nothing to commit, working tree clean
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git branch feature
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git switch feature
+Switched to branch 'feature'
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ nano feature.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git add feature.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git commit feature.txt
+[feature c72d26a] created feature.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch feature
+nothing to commit, working tree clean
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git checkout master
+Switched to branch 'master'
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch master
+nothing to commit, working tree clean
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git merge feature
+Updating 22043d5..c72d26a
+Fast-forward
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git branch -d feature
+Deleted branch feature (was c72d26a).
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git branch
+* master
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git log --oneline --graph
+* c72d26a (HEAD -> master) created feature.txt
+* 22043d5 fixed typos and added info to notes.txt
+* 7197512 first version of notes
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ cat feature.txt
+tatsächlich habe ich bislang nie einen fast forward merge gemacht, weil ich meist auf konflikte achten musste.
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git log --pretty=format:"%cn committed %h on %cd"
+Alexandra committed c72d26a on Mon May 5 22:52:25 2025 +0200
+Alexandra committed 22043d5 on Mon May 5 22:45:31 2025 +0200
+Alexandra committed 7197512 on Mon May 5 22:39:38 2025 +0200
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git merge experiment
+Auto-merging notes.txt
+CONFLICT (content): Merge conflict in notes.txt
+Automatic merge failed; fix conflicts and then commit the result.
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git diff
+diff --cc notes.txt
+index e48f66e,8d2a73a..0000000
+--- a/notes.txt
++++ b/notes.txt
+@@@ -4,4 -4,4 +4,8 @@@ Es dient in erster Linie dazu, Änderun
+  Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen, falls etwas nicht funktioniert.
+  Außerdem lässt sich gleichzeitig an verschiedenen Features arbeiten, die Beiträge einzelner Teammitglieder abbilden und der Werdegang eines Projekts verfolgen.
+
+++<<<<<<< HEAD
+ +Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um schnell den richtigen commit für das zu lösende Problem zu finden..
+++=======
++ Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, damit sich alle im Team zurecht finden.
+++>>>>>>> experiment
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ nano notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git merge experiment
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git add notes.txt
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git commit notes.txt
+fatal: cannot do a partial commit during a merge.
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git checkout experiment
+error: Your local changes to the following files would be overwritten by checkout:
+	notes.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git stash notes.txt
+fatal: subcommand wasn't specified; 'push' can't be assumed due to unexpected token 'notes.txt'
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	modified:   notes.txt
+
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git commit
+[master d52d03c] Merge branch 'experiment' appended changes made in experiment branch to changes made in master
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git merge experiment
+Already up-to-date.
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git log
+commit d52d03caf44460b4e04d9821270b53cd8f3041cf (HEAD -> master)
+Merge: 962fa07 7ec5676
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 23:22:51 2025 +0200
+
+    Merge branch 'experiment'
+    appended changes made in experiment branch to changes made in master
+
+commit 962fa07a10ded66fa75edce0dcfeb9c188f1b404
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 23:15:43 2025 +0200
+
+    changed last line of notes.txt
+
+commit 7ec5676bc141bb495aac181d1f2f5dc9c6a0b3a6 (experiment)
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 23:13:18 2025 +0200
+
+    added team info to last line
+
+commit c72d26aa865409f1f45721c66983639d11f542b3
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 22:52:25 2025 +0200
+
+    created feature.txt
+
+commit 22043d5fcbc96449ce25be44967e125e2a5ad258
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 22:45:31 2025 +0200
+
+    fixed typos and added info to notes.txt
+
+commit 719751244d82f8ca25a48c85a8c60c60a3622678
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 22:39:38 2025 +0200
+
+    first version of notes
+ala@ala-ThinkPad-P50:~/00_projects/IKT/git-homework$ git show 962fa07a10ded66fa75edce0dcfeb9c188f1b404...d52d03caf44460b4e04d9821270b53cd8f3041cf
+commit d52d03caf44460b4e04d9821270b53cd8f3041cf (HEAD -> master)
+Merge: 962fa07 7ec5676
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 23:22:51 2025 +0200
+
+    Merge branch 'experiment'
+    appended changes made in experiment branch to changes made in master
+
+diff --cc notes.txt
+index e48f66e,8d2a73a..735f249
+--- a/notes.txt
++++ b/notes.txt
+@@@ -1,7 -1,7 +1,8 @@@
+--Git ist ein Versionskontrollsystem, das von Linus Torvalds erfunden wurde, weil er mit den bestehenden Systemen unzufrieden war.
+++it ist ein Versionskontrollsystem, das von Linus Torvalds erfunden wurde, weil er mit den bestehenden Systemen unzufrieden war.
+
+  Es dient in erster Linie dazu, Änderungen an Code, aber auch anderen Projekten, nachverfolgen zu können.
+  Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen, falls etwas nicht funktioniert.
+  Außerdem lässt sich gleichzeitig an verschiedenen Features arbeiten, die Beiträge einzelner Teammitglieder abbilden und der Werdegang eines Projekts verfolgen.
+
+- Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um schnell den richtigen commit für das zu lösende Problem zu finden..
+ -Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, damit sich alle im Team zurecht finden.
+++Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um schnell den richtigen commit für das zu lösende Problem zu finden und damit sich alle im Team zurecht finden.
+++
+
+commit 7ec5676bc141bb495aac181d1f2f5dc9c6a0b3a6 (experiment)
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 23:13:18 2025 +0200
+
+    added team info to last line
+
+diff --git a/notes.txt b/notes.txt
+index d8876e4..8d2a73a 100644
+--- a/notes.txt
++++ b/notes.txt
+@@ -4,4 +4,4 @@ Es dient in erster Linie dazu, Änderungen an Code, aber auch anderen Projekten,
+ Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen, falls etwas nicht funktioniert.
+ Außerdem lässt sich gleichzeitig an verschiedenen Features arbeiten, die Beiträge einzelner Teammitglieder abbilden und der Werdegang eines Projekts verfolgen.
+
+-Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um reibungslos in der Historie suchen zu können.
++Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, damit sich alle im Team zurecht finden.
+(END)
+++
+
+commit 7ec5676bc141bb495aac181d1f2f5dc9c6a0b3a6 (experiment)
+Author: Alexandra <s0574421@htw-berlin.de>
+Date:   Mon May 5 23:13:18 2025 +0200
+
+    added team info to last line
+
+diff --git a/notes.txt b/notes.txt
+index d8876e4..8d2a73a 100644
+--- a/notes.txt
++++ b/notes.txt
+@@ -4,4 +4,4 @@ Es dient in erster Linie dazu, Änderungen an Code, aber auch anderen Projekten,
+ Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen, falls etwas nicht funktioniert.
+ Außerdem lässt sich gleichzeitig an verschiedenen Features arbeiten, die Beiträge einzelner Teammitglieder abbilden und der Werdegang eines Projekts verfolgen.
+
+-Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um reibungslos in der Historie suchen zu können.
++Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, damit sich alle im Team zurecht finden.

@@ -1,0 +1,7 @@
+Git ist ein Versionskontrollsystem, das von Linus Torvalds erfunden wurde, weil er mit den bestehenden Systemen unzufrieden war.
+
+Es dient in erster Linie dazu, Änderungen an Code, aber auch anderen Projekten, nachverfolgen zu können.
+Es ist - bei richtiger Anwendung - jederzeit möglich, auf eine frühere Version zurückzugehen, falls etwas nicht funktioniert.
+Außerdem lässt sich gleichzeitig an verschiedenen Features arbeiten, die Beiträge einzelner Teammitglieder abbilden und der Werdegang eines Projekts verfolgen.
+
+Es ist wichtig, möglichst aussagekräftige commit messages zu schreiben, um schnell den richtigen commit für das zu lösende Problem zu finden und damit sich alle im Team zurecht finden.

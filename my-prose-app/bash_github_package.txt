@@ -1,0 +1,859 @@
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$ mvn archetype:generate -DgroupId=com.example -DartifactId=my-prose-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.5 -DinteractiveMode=false
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] >>> maven-archetype-plugin:3.3.1:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO]
+[INFO] <<< maven-archetype-plugin:3.3.1:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO]
+[INFO]
+[INFO] --- maven-archetype-plugin:3.3.1:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: maven-archetype-quickstart:1.5
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.example
+[INFO] Parameter: artifactId, Value: my-prose-app
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.example
+[INFO] Parameter: packageInPathFormat, Value: com/example
+[INFO] Parameter: junitVersion, Value: 5.11.0
+[INFO] Parameter: package, Value: com.example
+[INFO] Parameter: groupId, Value: com.example
+[INFO] Parameter: artifactId, Value: my-prose-app
+[INFO] Parameter: javaCompilerVersion, Value: 17
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[WARNING] Don't override file /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/java/com/example
+[WARNING] Don't override file /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/java/com/example
+[WARNING] CP Don't override file /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/.mvn
+[INFO] Project created from Archetype in dir: /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.009 s
+[INFO] Finished at: 2025-05-19T02:54:11+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$ mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.067 s
+[INFO] Finished at: 2025-05-19T02:54:22+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$ ll
+total 84
+drwxrwxr-x 4 ala ala  4096 May 19 02:54 ./
+drwxrwxr-x 7 ala ala  4096 May 19 01:40 ../
+drwxrwxr-x 8 ala ala  4096 May 19 01:29 .git/
+-rw-rw-r-- 1 ala ala   382 May 19 01:20 .gitignore
+-rw-rw-r-- 1 ala ala 35149 May 19 01:20 LICENSE
+drwxrwxr-x 4 ala ala  4096 May 19 02:54 my-prose-app/
+-rw-rw-r-- 1 ala ala  2830 May 19 02:24 secret-tool-man.txt
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$ cd my-prose-app/; mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ my-prose-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s -- in com.example.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ my-prose-app ---
+[INFO] Building jar: /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target/my-prose-app-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.402 s
+[INFO] Finished at: 2025-05-19T02:54:53+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ ll
+total 44
+drwxrwxr-x 5 ala ala 4096 May 19 02:56 ./
+drwxrwxr-x 4 ala ala 4096 May 19 02:54 ../
+drwxrwxr-x 2 ala ala 4096 May 19 02:54 .mvn/
+-rw-rw-r-- 1 ala ala 3550 May 19 02:56 pom1.xml
+-rw-rw-r-- 1 ala ala 3107 May 19 02:54 pom.xml
+drwxrwxr-x 4 ala ala 4096 May 19 02:54 src/
+drwxrwxr-x 9 ala ala 4096 May 19 02:54 target/
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ meld pom.xml pom1.xml
+^Cala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ rm pom1.xml
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT/maven-metadata.xml from/to github (https://maven.pkg.github.com/bs-jokri/prose-builder): authentication failed for https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/maven-metadata.xml, status: 401 Unauthorized
+[WARNING] de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT/maven-metadata.xmlfailed to transfer from https://maven.pkg.github.com/bs-jokri/prose-builder during a previous attempt. This failure was cached in the local repository and resolution will not be reattempted until the update interval of github has elapsed or updates are forced. Original error: Could not transfer metadata de.htw_berlin.fb4.ossd:prose_builder:1.0-SNAPSHOT/maven-metadata.xml from/to github (https://maven.pkg.github.com/bs-jokri/prose-builder): authentication failed for https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/maven-metadata.xml, status: 401 Unauthorized
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/prose_builder-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.920 s
+[INFO] Finished at: 2025-05-19T02:58:47+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal on project my-prose-app: Could not resolve dependencies for project com.example:my-prose-app:jar:1.0-SNAPSHOT: Failed to collect dependencies at de.htw_berlin.fb4.ossd:prose_builder:jar:1.0-SNAPSHOT: Failed to read artifact descriptor for de.htw_berlin.fb4.ossd:prose_builder:jar:1.0-SNAPSHOT: Could not transfer artifact de.htw_berlin.fb4.ossd:prose_builder:pom:1.0-SNAPSHOT from/to github (https://maven.pkg.github.com/bs-jokri/prose-builder): authentication failed for https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/prose_builder-1.0-SNAPSHOT.pom, status: 401 Unauthorized -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/maven-metadata.xml
+Downloaded from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/maven-metadata.xml (1.1 kB at 976 B/s)
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/prose_builder-1.0-20250511.190440-1.pom
+Downloaded from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/prose_builder-1.0-20250511.190440-1.pom (2.8 kB at 2.1 kB/s)
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/prose_builder-1.0-20250511.190440-1.jar
+Downloaded from github: https://maven.pkg.github.com/bs-jokri/prose-builder/de/htw_berlin/fb4/ossd/prose_builder/1.0-SNAPSHOT/prose_builder-1.0-20250511.190440-1.jar (5.8 kB at 5.2 kB/s)
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ my-prose-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/org/junit/vintage/junit-vintage-engine/5.11.0/junit-vintage-engine-5.11.0.pom
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.11.0/junit-vintage-engine-5.11.0.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.11.0/junit-vintage-engine-5.11.0.pom (3.2 kB at 27 kB/s)
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/junit/junit/4.13.2/junit-4.13.2.pom
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.pom (27 kB at 587 kB/s)
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/org/junit/vintage/junit-vintage-engine/5.11.0/junit-vintage-engine-5.11.0.jar
+Downloading from github: https://maven.pkg.github.com/bs-jokri/prose-builder/junit/junit/4.13.2/junit-4.13.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.11.0/junit-vintage-engine-5.11.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/vintage/junit-vintage-engine/5.11.0/junit-vintage-engine-5.11.0.jar (69 kB at 1.3 MB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar (385 kB at 2.9 MB/s)
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.844 s
+[INFO] Finished at: 2025-05-19T03:11:49+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test (default-test) on project my-prose-app:
+[ERROR]
+[ERROR] Please refer to /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:628)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:285)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:250)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1224)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1073)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:907)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:298)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:960)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:293)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:196)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn install
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ my-prose-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ my-prose-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.234 s
+[INFO] Finished at: 2025-05-19T03:13:03+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test (default-test) on project my-prose-app:
+[ERROR]
+[ERROR] Please refer to /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:628)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:285)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:250)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1224)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1073)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:907)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:298)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:960)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:293)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:196)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ ll
+total 44
+drwxrwxr-x 5 ala ala 4096 May 19 03:08 ./
+drwxrwxr-x 4 ala ala 4096 May 19 02:54 ../
+drwxrwxr-x 2 ala ala 4096 May 19 02:54 .mvn/
+-rw-rw-r-- 1 ala ala  380 May 19 03:08 pom1.xml
+-rw-rw-r-- 1 ala ala 3544 May 19 02:57 pom.xml
+drwxrwxr-x 4 ala ala 4096 May 19 02:54 src/
+drwxrwxr-x 9 ala ala 4096 May 19 03:13 target/
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn build
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.096 s
+[INFO] Finished at: 2025-05-19T03:16:03+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Unknown lifecycle phase "build". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn validate
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.097 s
+[INFO] Finished at: 2025-05-19T03:19:09+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn compile
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.384 s
+[INFO] Finished at: 2025-05-19T03:19:57+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ my-prose-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.627 s
+[INFO] Finished at: 2025-05-19T03:20:10+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test (default-test) on project my-prose-app:
+[ERROR]
+[ERROR] Please refer to /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:628)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:285)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:250)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1224)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1073)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:907)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:298)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:960)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:293)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:196)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn test
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ my-prose-app ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ my-prose-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.098 s
+[INFO] Finished at: 2025-05-19T03:20:34+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test (default-test) on project my-prose-app:
+[ERROR]
+[ERROR] Please refer to /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:628)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:285)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:250)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1224)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1073)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:907)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:298)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:960)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:293)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:196)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn clean
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.4.0:clean (default-clean) @ my-prose-app ---
+[INFO] Deleting /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.192 s
+[INFO] Finished at: 2025-05-19T03:21:06+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.example:my-prose-app >----------------------
+[INFO] Building my-prose-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/classes
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ my-prose-app ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ my-prose-app ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ my-prose-app ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.660 s
+[INFO] Finished at: 2025-05-19T03:24:30+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.3.0:test (default-test) on project my-prose-app:
+[ERROR]
+[ERROR] Please refer to /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] org.apache.maven.surefire.booter.SurefireBooterForkException: There was an error in the forked process
+[ERROR] TestEngine with ID 'junit-vintage' failed to discover tests
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.fork(ForkStarter.java:628)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:285)
+[ERROR] 	at org.apache.maven.plugin.surefire.booterclient.ForkStarter.run(ForkStarter.java:250)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1224)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:1073)
+[ERROR] 	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:907)
+[ERROR] 	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:370)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:351)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:215)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:171)
+[ERROR] 	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:163)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+[ERROR] 	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+[ERROR] 	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:298)
+[ERROR] 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+[ERROR] 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+[ERROR] 	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:960)
+[ERROR] 	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:293)
+[ERROR] 	at org.apache.maven.cli.MavenCli.main(MavenCli.java:196)
+[ERROR] 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+[ERROR] 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:283)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:226)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:407)
+[ERROR] 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:348)
+[ERROR]
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/my-prose-app$ cd ..
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$ git clone https://github.com/bs-jokri/prose-builder.git
+Cloning into 'prose-builder'...
+remote: Enumerating objects: 126, done.
+remote: Counting objects: 100% (126/126), done.
+remote: Compressing objects: 100% (54/54), done.
+remote: Total 126 (delta 23), reused 105 (delta 16), pack-reused 0 (from 0)
+Receiving objects: 100% (126/126), 16.06 KiB | 5.35 MiB/s, done.
+Resolving deltas: 100% (23/23), done.
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$ cd prose-builder/;ll
+total 64
+drwxrwxr-x 4 ala ala 4096 May 19 03:25 ./
+drwxrwxr-x 5 ala ala 4096 May 19 03:25 ../
+-rw-rw-r-- 1 ala ala   44 May 19 03:25 DEPENDENCIES
+drwxrwxr-x 8 ala ala 4096 May 19 03:25 .git/
+-rw-rw-r-- 1 ala ala 1072 May 19 03:25 LICENSE
+-rw-rw-r-- 1 ala ala 1241 May 19 03:25 NOTICE
+-rw-rw-r-- 1 ala ala 2683 May 19 03:25 pom.xml
+drwxrwxr-x 5 ala ala 4096 May 19 03:25 src/
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder$ meld pom.xml ../my-prose-app/pom.xml
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder$ mvn validate
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------< de.htw_berlin.fb4.ossd:prose_builder >----------------
+[INFO] Building prose_builder 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.091 s
+[INFO] Finished at: 2025-05-19T03:28:43+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder$ mvn compile
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------< de.htw_berlin.fb4.ossd:prose_builder >----------------
+[INFO] Building prose_builder 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ prose_builder ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ prose_builder ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 5 source files with javac [debug target 8] to target/classes
+[WARNING] bootstrap class path is not set in conjunction with -source 8
+  not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+    --release 8 is recommended instead of -source 8 -target 8 because it sets the bootstrap class path automatically
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.906 s
+[INFO] Finished at: 2025-05-19T03:29:00+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder$ mvn package
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------< de.htw_berlin.fb4.ossd:prose_builder >----------------
+[INFO] Building prose_builder 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ prose_builder ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ prose_builder ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ prose_builder ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ prose_builder ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug target 8] to target/test-classes
+[WARNING] bootstrap class path is not set in conjunction with -source 8
+  not setting the bootstrap class path may lead to class files that cannot run on JDK 8
+    --release 8 is recommended instead of -source 8 -target 8 because it sets the bootstrap class path automatically
+[WARNING] source value 8 is obsolete and will be removed in a future release
+[WARNING] target value 8 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ prose_builder ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit.JUnit3Provider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running de.htw_berlin.fb4.ossd.prose.ProseBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s -- in de.htw_berlin.fb4.ossd.prose.ProseBuilderTest
+[INFO] Running de.htw_berlin.fb4.ossd.prose.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.htw_berlin.fb4.ossd.prose.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ prose_builder ---
+[INFO] Building jar: /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder/target/prose_builder-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.537 s
+[INFO] Finished at: 2025-05-19T03:29:19+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder$ mvn verify
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/usr/share/maven/lib/guava.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------< de.htw_berlin.fb4.ossd:prose_builder >----------------
+[INFO] Building prose_builder 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ prose_builder ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder/src/main/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ prose_builder ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ prose_builder ---
+[INFO] skip non existing resourceDirectory /home/ala/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder/src/test/resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ prose_builder ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO]
+[INFO] --- maven-surefire-plugin:3.3.0:test (default-test) @ prose_builder ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit.JUnit3Provider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running de.htw_berlin.fb4.ossd.prose.ProseBuilderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.040 s -- in de.htw_berlin.fb4.ossd.prose.ProseBuilderTest
+[INFO] Running de.htw_berlin.fb4.ossd.prose.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in de.htw_berlin.fb4.ossd.prose.AppTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.4.2:jar (default-jar) @ prose_builder ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.131 s
+[INFO] Finished at: 2025-05-19T03:29:38+02:00
+[INFO] ------------------------------------------------------------------------
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs/prose-builder$ cd ..
+ala@ala-ThinkPad-P50:~/IdeaProjects/uni/IKT/IKT_assignments_labs$
