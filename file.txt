@@ -1,1 +1,1 @@
-this is an example file for demonstartion purposes only
+this is an example file for demonstration purposes only. fixed the typo, though.
