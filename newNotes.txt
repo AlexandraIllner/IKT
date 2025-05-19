@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 test test test
+=======
+>>>>>>> feature-x
 und noch mehr tests
 
 tests
 
 
 tests				teeeeests
+<<<<<<< HEAD
 
+=======
+>>>>>>> feature-x

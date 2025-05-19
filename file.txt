@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 do not panic: this is just a test file!
 
 keep calm
 &
 grab your towel
+=======
+this is an example file for demonstartion purposes only
+>>>>>>> feature-x
